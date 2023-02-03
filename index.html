@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;900&family=Nunito:wght@200;300;400;500;600;800;900;1000&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Cadastre-se</title>
+</head>
+<body>
+  <div class="main-div">
+    <div class="left-img"> 
+      <img src="img.svg" alt="image">
+    </div>
+
+    <div class="form">
+
+      <form action="#">
+        <div class="form-header">
+          <div class="title">
+            <h1>Cadastre-se</h1>
+          </div>
+          <div class="login-btn">
+            <button> <a href="#">Entrar</a></button>
+          </div>
+        </div> 
+
+        <div class="input-group">
+          <div class="input-box">
+            <label for="firstname">Primeiro nome</label>
+            <input type="text" name="firstname"id="firstname" placeholder="Digite seu primeiro nome" required>
+          </div>
+
+          <div class="input-box">
+            <label for="lastname">Sobrenome</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+          </div>
+
+          <div class="input-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required>
+          </div>
+
+          <div class="input-box">
+            <label for="celular">Celular</label>
+            <input type="tel" name="number" id="number" placeholder="(xx) 9xxxx-xxxx" required>
+          </div>
+
+          <div class="input-box">
+            <label for="senha">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" required>
+          </div>
+
+          <div class="input-box">
+            <label for="senha">Confirme sua senha</label>
+            <input type="password" name="confirpassword" id="confirpassword" placeholder="Digite sua senha novamente" required>
+          </div>
+        </div>
+
+        <div class="gender-inputs">
+          <div class="gender-title">
+            <h4>Gênero</h4>
+          </div>
+
+          <div class="gender-group">
+            <div class="gender-input">
+              <input type="radio" name="gender" id="fam">
+              <label for="fem">Feminino</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" name="gender" id="masc">
+              <label for="masc">Masculino</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" name="gender" id="others">
+              <label for="others">Outros</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" name="gender" id="none">
+              <label for="none">Prefiro não informar</label>
+            </di</div>
+          </div>  
+        </div>
+
+        <div class="continue-btn">
+          <button> <a href="#">Continuar</a></button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
