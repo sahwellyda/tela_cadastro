@@ -98,7 +98,7 @@ body {
 .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .input-box input {
@@ -190,22 +190,30 @@ body {
 }  
 
 @media screen and (max-width: 1064px) {
+  body{
+    background-color: #fff;
+  }
+  
   .main-div{
     width: 90%;
     height: auto;
+    box-shadow: none;
   }
 
   .form{
-    padding-top: 450px;
+    width: 100%;
+    padding-top: 400px;
+  }
+
+  .login-btn{
+    margin-left: 20px;
   }
 
   .input-group {
     flex-direction: column;
     z-index: 5;
-    /* overflow-y: scroll; */
     flex-wrap: nowrap;
     max-height: 100vh;
-    /* padding-right: 5rem; */
   }
 
   .gender-inputs {
