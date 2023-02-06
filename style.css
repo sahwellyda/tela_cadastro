@@ -130,6 +130,7 @@ body {
   justify-content:space-between ;
   margin-top: 0.62rem;
   padding: 0 0.5rem;
+  gap: 8px;
 }
 
 .gender-input {
@@ -221,17 +222,13 @@ body {
     box-shadow: none;
   }
 
-  .form-header{
-    margin-top: 150px;
-  }
-
   .form-header .title h1{
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 1.4em;
   }
 
   .form-header .login-btn{
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .login-btn{
@@ -241,8 +238,10 @@ body {
   .input-group {
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 100vh;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 90vh;
   }
 
   .gender-inputs {
@@ -253,12 +252,17 @@ body {
     flex-direction: column;
   }
 
-  .gender-title h4 {
+  .gender-title, h4 {
+    padding-top: 10px;
     margin: 0;
   }
 
   .gender-input{
     margin-top: 0.5rem;
+  }
+
+  .continue-btn{
+    padding-bottom: 20px;
   }
 } 
   
