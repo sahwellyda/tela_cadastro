@@ -16,7 +16,7 @@ body {
 
 .main-div {
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 
@@ -42,11 +42,11 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .form-header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   
@@ -98,11 +98,11 @@ body {
 .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .input-box input {
-  margin: O.6rem 0rem;
+  margin: 0.6rem 0rem;
   padding: 0.8rem 1.2rem;
   border: none;
   border-radius: 10px;
@@ -111,7 +111,7 @@ body {
 }
 
 .input-box input:focus-visible {
-  outline: 1px solid #DB7FEA;;
+  outline: 1px solid #DB7FEA;
 }
 
 .input-box label,
@@ -130,6 +130,7 @@ body {
   justify-content:space-between ;
   margin-top: 0.62rem;
   padding: 0 0.5rem;
+  gap: 8px;
 }
 
 .gender-input {
@@ -181,45 +182,89 @@ body {
   }
 
   .main-div{
-    width: 50%;
+    width: 100%;
+    height: 100vh;
+    
   }
 
   .form {
     width: 100%;
   }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .gender-title h4{
+    margin-bottom: 20px;
+  }
+
+  .gender-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-header .title h1{
+    font-size: 1.4em;
+  }
 }  
 
 @media screen and (max-width: 1064px) {
+  body{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+  }
+  
   .main-div{
     width: 90%;
     height: auto;
+    box-shadow: none;
+  }
+
+  .form-header .title h1{
+    margin-top: 100px;
+    font-size: 1.4em;
+  }
+
+  .form-header .login-btn{
+    margin-top: 100px;
+  }
+
+  .login-btn{
+    margin-left: 20px;
   }
 
   .input-group {
     flex-direction: column;
-    z-index: 5;
-    overflow-y: scroll;
     flex-wrap: nowrap;
-    max-height: 10rem;
-    padding-right: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    height: 90vh;
   }
 
   .gender-inputs {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
   }
 
   .gender-group {
     flex-direction: column;
   }
 
-  .gender-title h4 {
+  .gender-title, h4 {
+    padding-top: 10px;
     margin: 0;
   }
 
   .gender-input{
     margin-top: 0.5rem;
   }
-}
+
+  .continue-btn{
+    padding-bottom: 20px;
+  }
+} 
   
 
 
